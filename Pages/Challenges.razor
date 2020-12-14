@@ -1,0 +1,81 @@
+﻿@page "/challenges"
+@inherits ChallengesBase
+
+<div class="challenges container">
+    @if (playerdata == null)
+    {
+        <h1>Oops...</h1>
+        <p>You haven't loaded a save file yet, redirecting you now.</p>
+    }
+    else
+    {
+        <h1 class="display-4">Challenges</h1>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Challenge Name</th>
+                    <th>Fastest/Last time <span class="text-muted">(mm:ss)</span></th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.basicChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("basicChallenge", 5))</td>
+                </tr>
+                <tr>
+                    <td>No Augs</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.noAugsChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("noAugsChallenge", 5))</td>
+                </tr>
+                <tr>
+                    <td>24 Hour</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.hour24Challenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("hour24Challenge", 10))</td>
+                </tr>
+                <tr>
+                    <td>100 Level</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.levelChallenge10k.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("levelChallenge10k", 5))</td>
+                </tr>
+                <tr>
+                    <td>No Equipment</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.noEquipmentChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("noEquipmentChallenge", 5))</td>
+                </tr>
+                <tr>
+                    <td>Troll</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.trollChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("trollChallenge", 7))</td>
+                </tr>
+                <tr>
+                    <td>No Rebirth</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.noRebirthChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("noRebirthChallenge", 10))</td>
+                </tr>
+                <tr>
+                    <td>Laser Sword</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.laserSwordChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("laserSwordChallenge", 20))</td>
+                </tr>
+                <tr>
+                    <td>Blind</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.blindChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("blindChallenge", 10))</td>
+                </tr>
+                <tr>
+                    <td>No NGU</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.nguChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("nguChallenge", 10))</td>
+                </tr>
+                <tr>
+                    <td>No TM</td>
+                    <td>@asMinutesAndSeconds(playerdata.challenges.timeMachineChallenge.bestTime)</td>
+                    <td>@((MarkupString)GetChallengeProgress("timeMachineChallenge", 10))</td>
+                </tr>
+            </tbody>
+        </table>
+    }
+</div>

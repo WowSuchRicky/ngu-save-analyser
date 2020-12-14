@@ -1,0 +1,57 @@
+﻿@inherits NavMenuBase
+
+<div class="top-row pl-4 navbar navbar-dark">
+    <a class="navbar-brand" href="">NGU Save Analyser</a>
+    <button class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+
+<div>
+    <ul class="nav flex-column">
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
+                <span class="oi oi-home" aria-hidden="true"></span> Read save file
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="load">
+                <span class="oi oi-plus" aria-hidden="true"></span> Load shared file
+            </NavLink>
+        </li>
+        @if (SaveFileLoaded)
+        {
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="share">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Share your stats
+                </NavLink>
+            </li>
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="summary">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Summary
+                </NavLink>
+            </li>
+        }
+        @if (ChallengesUnlocked)
+        {
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="challenges">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Challenges
+                </NavLink>
+            </li>
+        }
+        @if (YggUnlocked)
+        {
+            <li class="nav-item px-3">
+                <NavLink class="nav-link" href="yggdrasil">
+                    <span class="oi oi-plus" aria-hidden="true"></span> Yggdrasil
+                </NavLink>
+            </li>
+        }
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="otherstuff">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Coming soon...
+            </NavLink>
+        </li>
+    </ul>
+</div>
