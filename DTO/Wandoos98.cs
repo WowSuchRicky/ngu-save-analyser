@@ -61,7 +61,7 @@ public class Wandoos98
     // Token: 0x0600112D RID: 4397 RVA: 0x000F9179 File Offset: 0x000F7579
     public float timeFactor()
     {
-        return Mathf.Min((float)(this.bootupTime.totalseconds / 3600.0), 1f);
+        return Math.Min((float)(this.bootupTime.totalseconds / 3600.0), 1f);
     }
 
     // Token: 0x0600112E RID: 4398 RVA: 0x000F919B File Offset: 0x000F759B

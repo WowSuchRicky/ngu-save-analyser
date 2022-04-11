@@ -68,7 +68,7 @@ public class Challenge
         {
             return this.curCompletions * this.perkPointReward;
         }
-        return Mathf.Min(this.curCompletions, this.maxCompletions) * this.perkPointReward;
+        return Math.Min(this.curCompletions, this.maxCompletions) * this.perkPointReward;
     }
 
     // Token: 0x0600064D RID: 1613 RVA: 0x000534A1 File Offset: 0x000518A1

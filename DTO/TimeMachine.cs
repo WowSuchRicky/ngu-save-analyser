@@ -58,11 +58,11 @@ public class TimeMachine
         if (this.speedEnergy == 0L)
         {
             float num = (1f - this.speedProgress) * (this.speedBuildTime * (float)(this.levelSpeed + 1L)) / (1000f * speed / 1000f);
-            float num2 = Mathf.Floor(num / 86400f);
+            float num2 = (float)Math.Floor(num / 86400f);
             num %= 86400f;
-            float num3 = Mathf.Floor(num / 3600f);
+            float num3 = (float)Math.Floor(num / 3600f);
             num %= 3600f;
-            float num4 = Mathf.Floor(num / 60f);
+            float num4 = (float)Math.Floor(num / 60f);
             num %= 60f;
             return string.Concat(new object[]
             {
@@ -77,11 +77,11 @@ public class TimeMachine
             });
         }
         float num5 = (1f - this.speedProgress) * (this.speedBuildTime * (float)(this.levelSpeed + 1L)) / ((float)this.speedEnergy * speed / 1000f);
-        float num6 = Mathf.Floor(num5 / 86400f);
+        float num6 = (float)Math.Floor(num5 / 86400f);
         num5 %= 86400f;
-        float num7 = Mathf.Floor(num5 / 3600f);
+        float num7 = (float)Math.Floor(num5 / 3600f);
         num5 %= 3600f;
-        float num8 = Mathf.Floor(num5 / 60f);
+        float num8 = (float)Math.Floor(num5 / 60f);
         num5 %= 60f;
         return string.Concat(new object[]
         {
@@ -108,11 +108,11 @@ public class TimeMachine
         if (this.goldMultiMagic == 0L)
         {
             float num = (1f - this.goldMultiProgress) * (this.goldMultiBuildTime * (float)(this.levelGoldMulti + 1L)) / (1000f * magicSpeed / 1000f);
-            float num2 = Mathf.Floor(num / 86400f);
+            float num2 = (float)Math.Floor(num / 86400f);
             num %= 86400f;
-            float num3 = Mathf.Floor(num / 3600f);
+            float num3 = (float)Math.Floor(num / 3600f);
             num %= 3600f;
-            float num4 = Mathf.Floor(num / 60f);
+            float num4 = (float)Math.Floor(num / 60f);
             num %= 60f;
             return string.Concat(new object[]
             {
@@ -127,11 +127,11 @@ public class TimeMachine
             });
         }
         float num5 = (1f - this.goldMultiProgress) * (this.goldMultiBuildTime * (float)(this.levelGoldMulti + 1L)) / ((float)this.goldMultiMagic * magicSpeed / 1000f);
-        float num6 = Mathf.Floor(num5 / 86400f);
+        float num6 = (float)Math.Floor(num5 / 86400f);
         num5 %= 86400f;
-        float num7 = Mathf.Floor(num5 / 3600f);
+        float num7 = (float)Math.Floor(num5 / 3600f);
         num5 %= 3600f;
-        float num8 = Mathf.Floor(num5 / 60f);
+        float num8 = (float)Math.Floor(num5 / 60f);
         num5 %= 60f;
         return string.Concat(new object[]
         {

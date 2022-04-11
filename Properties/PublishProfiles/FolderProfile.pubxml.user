@@ -6,6 +6,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
-    <_PublishTargetUrl>C:\Users\Jamie\Documents\GitHub\NGUSaveAnalyser\bin\Release\netstandard2.0\publish\</_PublishTargetUrl>
+    <_PublishTargetUrl>D:\Development\ngu-save-analyser\bin\Release\netstandard2.0\publish\</_PublishTargetUrl>
+    <History>True|2022-04-12T06:43:50.1273776Z;True|2022-04-11T13:31:12.6121270-07:00;True|2022-04-11T13:17:25.5318509-07:00;True|2022-04-11T12:57:36.9420006-07:00;True|2022-04-11T12:44:00.0957890-07:00;True|2022-04-11T12:37:06.8265818-07:00;False|2022-04-11T12:33:54.8287732-07:00;False|2022-04-11T12:33:39.3605918-07:00;True|2022-04-11T12:21:47.1417745-07:00;True|2022-04-11T12:19:27.4059356-07:00;True|2022-04-11T12:13:14.5351793-07:00;True|2022-04-11T12:08:22.8304842-07:00;</History>
   </PropertyGroup>
 </Project>

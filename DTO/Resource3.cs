@@ -39,11 +39,7 @@ public class Resource3
     // Token: 0x06000982 RID: 2434 RVA: 0x0007758C File Offset: 0x0007598C
     public string colourHexString()
     {
-        Color32 color = new Color(this.res3R, this.res3G, this.res3B);
-        string str = color.r.ToString("X2");
-        string str2 = color.g.ToString("X2");
-        string str3 = color.b.ToString("X2");
-        return str + str2 + str3;
+        return "";
     }
 
     // Token: 0x06000983 RID: 2435 RVA: 0x000775F4 File Offset: 0x000759F4
@@ -55,12 +51,7 @@ public class Resource3
     // Token: 0x06000984 RID: 2436 RVA: 0x00077608 File Offset: 0x00075A08
     public string colourHexStringTest()
     {
-        Color32 color = new Color(0.8f, 0.25f, 0f);
-        string str = color.r.ToString("X2");
-        string str2 = color.g.ToString("X2");
-        string str3 = color.b.ToString("X2");
-        //Debug.Log(str + str2 + str3 + "FF");
-        return str + str2 + str3 + "FF";
+        return "";
     }
 
     // Token: 0x04000707 RID: 1799

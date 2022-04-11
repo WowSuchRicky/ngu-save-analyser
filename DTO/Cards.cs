@@ -22,8 +22,8 @@ public class Cards
         {
             this.bonuses.Add(1f);
         }
-        this.cardState = default(UnityEngine.Random.State);
-        this.chonkerState = default(UnityEngine.Random.State);
+        // this.cardState = default(UnityEngine.Random.State);
+        // this.chonkerState = default(UnityEngine.Random.State);
         this.cardsOn = false;
         this.cardsGenerated = 0;
         this.extraDeckSpace = 0;
@@ -79,10 +79,10 @@ public class Cards
     public List<float> bonuses;
 
     // Token: 0x0400047C RID: 1148
-    public UnityEngine.Random.State cardState;
+    // public UnityEngine.Random.State cardState;
 
     // Token: 0x0400047D RID: 1149
-    public UnityEngine.Random.State chonkerState;
+    // public UnityEngine.Random.State chonkerState;
 
     // Token: 0x0400047E RID: 1150
     public PlayerTime cardSpawnTimer;
