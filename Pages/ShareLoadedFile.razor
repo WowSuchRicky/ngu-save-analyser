@@ -3,23 +3,10 @@
 @inherits ShareLoadedFileBase
 @inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager
 
-@if (saveId == null)
-{
-    <p>Loading...</p>
-}
-else
-{
-    <div class="load-shared-file container">
-        <h1>Share your stats</h1>
+<div>
+    <h1>Export your stats</h1>
 
-        <p>Your stats have been uploaded and can be viewed at the link below.</p>
-        <p>The link will expire in around 60 minutes.</p>
-        <p>https://ngusav.es/load/@saveId</p>
-
-        <h1>Export your stats</h1>
-
-        <p>Alternatively, click the link below to down a copy of your save file in JSON form.</p>
-        <p>This may be useful to see more information that's not shown on ngusav.es or to import into other tools.</p>
-        <button @onclick="SaveAsJSON">Save as JSON</button>
-    </div>
-}
+    <p>Click the link below to down a copy of your save file in JSON form.</p>
+    <p>This may be useful to see more information that's not shown on ngusav.es or to import into other tools.</p>
+    <button @onclick="SaveAsJSON">Save as JSON</button>
+</div>
