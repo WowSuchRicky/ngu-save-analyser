@@ -1,5 +1,4 @@
 ﻿using System;
-using UnityEngine;
 
 // Token: 0x02000126 RID: 294
 [Serializable]
@@ -168,10 +167,10 @@ public class PlayerData
     public PlayerTime totalPlaytime;
 
     // Token: 0x04000D33 RID: 3379
-    public UnityEngine.Random.State lootState;
+    // public UnityEngine.Random.State lootState;
 
     // Token: 0x04000D34 RID: 3380
-    public UnityEngine.Random.State boostState;
+    // public UnityEngine.Random.State boostState;
 
     // Token: 0x04000D35 RID: 3381
     public Purchases purchases;

@@ -34,7 +34,7 @@ public class Fruit
             resetFactor = 1f;
         }
         this.activated = false;
-        this.seconds *= Mathf.Floor(resetFactor);
+        this.seconds *= (float)Math.Floor(resetFactor);
         this.totalLevels = 0L;
         this.harvests = 0;
     }
@@ -55,7 +55,7 @@ public class Fruit
     // Token: 0x06001236 RID: 4662 RVA: 0x0010003C File Offset: 0x000FE43C
     public int harvestTier()
     {
-        return Mathf.Min(Mathf.FloorToInt(this.seconds / 3600f), (int)this.maxTier);
+        return Math.Min((int)Math.Floor(this.seconds / 3600f), (int)this.maxTier);
     }
 
     // Token: 0x06001237 RID: 4663 RVA: 0x0010005B File Offset: 0x000FE45B

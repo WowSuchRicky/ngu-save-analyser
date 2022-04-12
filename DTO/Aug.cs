@@ -40,7 +40,7 @@ public class Aug
     // Token: 0x060003D5 RID: 981 RVA: 0x0003D6F8 File Offset: 0x0003BAF8
     public float getUpgradeCost()
     {
-        return this.upgradeGoldCost * Mathf.Pow((float)(1L + this.upgradeLevel), 2f);
+        return (float)(this.upgradeGoldCost * Math.Pow((float)(1L + this.upgradeLevel), 2f));
     }
 
     // Token: 0x060003D6 RID: 982 RVA: 0x0003D715 File Offset: 0x0003BB15
@@ -109,7 +109,7 @@ public class Aug
         {
             return 0.0;
         }
-        return (double)((float)this.augLevel * (1f + Mathf.Pow((float)this.upgradeLevel, 2f)) * (float)this.attackFactor);
+        return (double)((float)this.augLevel * (1f + Math.Pow((float)this.upgradeLevel, 2f)) * (float)this.attackFactor);
     }
 
     // Token: 0x060003DE RID: 990 RVA: 0x0003D858 File Offset: 0x0003BC58
